@@ -1,0 +1,42 @@
+html, * {
+    padding: 0;
+    margin: 0;
+}
+body {
+	background-color: white;
+    text-align: center;
+	font-family: "Arial"; 
+	font-size:16px;
+}
+.nav {
+	display: block;
+	position: relative;
+	width: 75%;
+	height: 50px;
+	padding: 10px;
+	
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	
+    margin-top: 0px;
+	margin-bottom: auto;
+	margin-right: auto;
+	margin-left: auto;
+	
+	
+}
+.navbuttons {
+	list-style-type: none;
+	box-sizing: border-box;
+}
+.homebutton {
+	position: static;
+	float:left;
+	width:5%;
+	padding: 10px;
+	margin: 10px;
+	background-color: grey;
+}
+
+
