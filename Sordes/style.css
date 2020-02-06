@@ -1,0 +1,40 @@
+html, * {
+    padding: 0;
+    margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: white;
+    text-align: center;
+	font-family: "Arial"; 
+	font-size: 16px;
+}
+.nav {
+	display: block;
+	position: relative;
+	width: 50%;
+	
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	
+    margin-top: 0%;
+	margin-bottom: auto;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+.navbuttons {
+	list-style-type: none;
+}
+.homebutton {
+	background-color: grey;
+}
+.signupbutton {
+	background-color: #EBEDF1;
+}
+.loginfields {
+	background-color: #C0C0C0;
+}
+
+
