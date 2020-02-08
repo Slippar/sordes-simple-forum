@@ -5,6 +5,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Very cool forum." />
     <meta name="keywords" content="sordes, forum" />
     <title>Sordes</title>
@@ -16,15 +17,17 @@
 		<nav class=nav>
 			<ul class=navbuttons>
 				<li class="homebutton"><a href="index.php">Home</a><li>
-				<li class="messagesbutton"><a href="#">Messages</a><li>
-				<li class="profilebutton"><a href="#">Profile</a><li>
 			</ul>
 			<div class=login>
 				<?php 
 					if (isset($_SESSION['userId'])) {
 						echo '<form action="includes/logout.inc.php" method="post" class="logoutbutton">
 							<button type="text" name="logout-submit">Logout</button>
-							</form>';
+							</form>
+							<ul class=navbuttons>
+							<li class="messagesbutton"><a href="#">Messages</a><li>
+							<li class="profilebutton"><a href="#">Profile</a><li>
+							</ul>';
 					}
 					else {
 						echo '<form action="includes/login.inc.php" method="post" class="loginfields">
