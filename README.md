@@ -1,4 +1,3 @@
 # Sordes Forum
 Forum website
-
-Forum folder contains older version, Sordes contain new one.
+Created 6.02.2020
