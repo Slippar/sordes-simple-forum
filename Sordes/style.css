@@ -36,5 +36,31 @@ body {
 .loginfields {
 	background-color: #C0C0C0;
 }
+.forumbody {
+	width: 45%;
+	
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+	
+	background-color: grey;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+}
+.CatTopPost {
+	display: block;
+	padding: 0;
+    margin: 0;
+}
+.CatName {
+	background-color: grey;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-style: solid;
+	width: 80%;
+}
 
 
