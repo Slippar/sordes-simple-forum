@@ -53,14 +53,34 @@ body {
 	display: block;
 	padding: 0;
     margin: 0;
+	width: 100%;
+	background-color: white;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	border-collapse: collapse;
 }
 .CatName {
-	background-color: grey;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-style: solid;
 	width: 80%;
 }
+.PostName {
+	width: 15%;
+}
+.Cats {
+	display: block;
+	padding: 0;
+    margin: 0;
+	background-color: white;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	border-collapse: collapse;
+}
+.CatsName {
+	background-color: coral;
+}
+.Cats th {
+	padding: 0;
+    margin: 0;
+}
+
 
 

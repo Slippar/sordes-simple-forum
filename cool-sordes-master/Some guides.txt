@@ -1,3 +1,0 @@
-http://www.dreevoo.com/content.php?id=1497
-https://code.tutsplus.com/tutorials/how-to-create-a-phpmysql-powered-forum-from-scratch--net-10188
-http://www.tuttoaster.com/how-to-create-a-forum-in-php-from-scratch/
