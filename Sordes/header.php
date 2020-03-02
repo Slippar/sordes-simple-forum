@@ -25,7 +25,6 @@
 							<button type="text" name="logout-submit">Logout</button>
 							</form>
 							<ul class=navbuttons>
-							<li class="messagesbutton"><a href="#">Messages</a><li>
 							<li class="profilebutton"><a href="#">Profile</a><li>
 							</ul>';
 					}

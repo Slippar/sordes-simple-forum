@@ -1,4 +1,4 @@
 </div>
-<div id="footer">Deez nuts productions®, Georgy Fedorov work</div>
+<div id="footer">Pls no hack</div>
 </body>
 </html>
