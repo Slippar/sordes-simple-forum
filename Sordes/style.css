@@ -62,7 +62,34 @@ body {
 	border-bottom-color: black;
 	border-collapse: collapse;
 }
-
+.ass {
+	display: block;
+	position: relative;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	border-right-style: solid;
+	border-right-color: black;
+	border-left-style: solid;
+	border-left-color: black;
+	border-top-style: solid;
+	border-top-color: black;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+}
+.ass1 {
+	display: block;
+	position: relative;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	border-right-style: solid;
+	border-right-color: black;
+	border-left-style: solid;
+	border-left-color: black;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+}
 
 
 

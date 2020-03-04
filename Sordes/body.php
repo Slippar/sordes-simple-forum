@@ -14,7 +14,7 @@
 						while($row = $result->fetch_assoc()) {
 							echo "<table class=Cats>
 									<tr>
-										<td class=CatsName>" . $row["nameCategories"]. "</td class=CatsName>
+										<td class=CatsName> <a href='category.php?id=" . $row["idCategories"] . "'>" . $row["nameCategories"]. "</a> </td class=CatsName>
 									</tr>
 								  </table class=Cats>";
 						}
