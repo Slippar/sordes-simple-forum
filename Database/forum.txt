@@ -1,0 +1,50 @@
+CREATE DATABASE forum;
+
+CREATE TABLE `categories` (
+  `idCategories` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `nameCategories` varchar(50) NOT NULL UNIQUE KEY,
+  `descCategories` varchar(255) DEFAULT NULL
+) ;
+
+CREATE TABLE `posts` (
+  `idPost` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `contentPost` text NOT NULL,
+  `datePost` datetime NOT NULL,
+  `topicPost` int(11) NOT NULL,
+  `byPost` int(11) NOT NULL 
+) ;
+
+
+CREATE TABLE `topics` (
+  `IdTopics` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `subjectTopics` varchar(255) NOT NULL,
+  `dateTopics` datetime NOT NULL,
+  `catTopics` int(11) NOT NULL,
+  `byTopics` int(11) NOT NULL
+) ;
+
+
+CREATE TABLE `users` (
+  `idUsers` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `uidUsers` varchar(30) NOT NULL UNIQUE KEY,
+  `pwdUsers` varchar(500) NOT NULL,
+  `emailUsers` varchar(50) NOT NULL UNIQUE KEY,
+  `roleUsers` varchar(30) NOT NULL DEFAULT '1',
+  `regdateUsers` datetime NOT NULL DEFAULT current_timestamp()
+);
+
+
+INSERT INTO `users` (`idUsers`, `uidUsers`, `pwdUsers`, `emailUsers`, `roleUsers`, `regdateUsers`) VALUES
+(0, 'Slippar', '$2y$10$zcwFG8aM/7Q3B8JiT/gHROCVNNWgBDGz2SsOpUtUbFJgGwZM7hZd2', 'georgewillbertt@gmail.com', '2', '2020-02-12 17:31:07');
+
+
+
+
+ALTER TABLE `posts`
+  ADD CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`topicPost`) REFERENCES `topics` (`IdTopics`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `posts_ibfk_2` FOREIGN KEY (`byPost`) REFERENCES `users` (`idUsers`) ON UPDATE CASCADE;
+
+
+ALTER TABLE `topics`
+  ADD CONSTRAINT `topics_ibfk_1` FOREIGN KEY (`catTopics`) REFERENCES `categories` (`idCategories`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `topics_ibfk_2` FOREIGN KEY (`byTopics`) REFERENCES `users` (`idUsers`) ON UPDATE CASCADE;
