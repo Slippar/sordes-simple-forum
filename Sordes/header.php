@@ -9,7 +9,7 @@
     <meta name="description" content="Very cool forum." />
     <meta name="keywords" content="sordes, forum" />
     <title>Sordes</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="media/style.css" type="text/css">
 </head>
 <body>
 	<div id=frame>
@@ -25,8 +25,14 @@
 							<button type="text" name="logout-submit">Logout</button>
 							</form>
 							<ul class=navbuttons>
-							<li class="profilebutton"><a href="#">Profile</a><li>
+							<li class="createtopicbutton"><a href="create_topic.php">Create a topic</a><li>
 							</ul>';
+							
+						if ($_SESSION['userRole'] >= 2) {
+							echo '<ul class=navbuttons>
+							<li class="createcategorybutton"><a href="create_cat.php">Create a category</a><li>
+							</ul>';
+						}
 					}
 					else {
 						echo '<form action="includes/login.inc.php" method="post" class="loginfields">

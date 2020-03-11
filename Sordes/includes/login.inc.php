@@ -32,7 +32,8 @@ if(isset($_POST['login-submit'])) {
 				else if ($pwdCheck == true) {
 					session_start();
 					$_SESSION['userId'] = $row['idUsers'];
-					$_SESSION['userUid'] = $row['idUsers'];
+					$_SESSION['userUid'] = $row['uidUsers'];
+					$_SESSION['userRole'] = $row['roleUsers'];
 					
 					header("Location: ../index.php?login=success");
 					exit();

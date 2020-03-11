@@ -35,17 +35,20 @@ else {
                 FROM
                     topics
                 WHERE
-                    idTopics = " . mysqli_real_escape_string($conn, $_GET['id']);
+                    catTopics = " . mysqli_real_escape_string($conn, $_GET['id']);
          
         $result = mysqli_query($conn, $sql);
          
         if(!$result) {
             echo 'The topics could not be displayed, please try again later.';
         }
+		
         else {
+			
             if(mysqli_num_rows($result) == 0) {
                 echo 'There are no topics in this category yet.';
             }
+			
             else{
                 //prepare the table
                 echo '<table class="ass">
