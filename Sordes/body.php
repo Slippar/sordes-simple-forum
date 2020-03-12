@@ -1,10 +1,10 @@
 	<div class=forumbody>
-		<table class=CatTopPost>
+		<table class=Catnames>
 		  <tr>
 			<td class=CatName>Category</td>
 		  </tr>
-		</table class=CatTopPost>
-		<div class=dod>
+		</table class=Catnames>
+		<div class=catview>
 			<?php 
 					require "includes/dbh.inc.php";
 					$CatCheck = "SELECT * FROM categories";
@@ -24,5 +24,5 @@
 					}
 					$conn->close();
 			?>
-		</div class=dod>
+		</div class=catview>
 	</div class=forumbody>

@@ -51,14 +51,14 @@ else {
 			
             else{
                 //prepare the table
-                echo '<table class="ass">
+                echo '<table class="topicviewtop">
                       <tr>
                         <th>Topic</th>
                         <th>Created at</th>
                       </tr>'; 
                      
                 while($row = mysqli_fetch_assoc($result)) {               
-                    echo '<table class="ass1">
+                    echo '<table class="topicview">
 						  <tr>';
                         echo '<td class="leftpart">';
                             echo '<h3><a href="topic.php?id=' . $row['idTopics'] . '">' . $row['subjectTopics'] . '</a><h3>';
