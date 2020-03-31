@@ -50,7 +50,6 @@ else {
         }
 		
         else {
-                //prepare the table
                 echo '<table class="topictable1">
                       <tr>
 						<th>User</th>
@@ -68,17 +67,17 @@ else {
                         echo '</td>';
                     echo '</tr>';
                 }
+
+				if (isset($_SESSION['userId'])) {
+					echo '	<h3>Reply:</h3>
+							<form class="SendReply" action="reply.php?id=' . $_GET['id'] . '" method="post">
+								<textarea name="reply-content" placeholder="Your reply..."></textarea>
+								<button type="submit" name="reply-submit">Submit reply</button>
+							</form>';
+				}
             
         }
-		
-		if (isset($_SESSION['userId'])) {
-			echo '	<h2>Reply:</h2>
-					<form class="SendReply" action="reply.php?id=' . $_GET['id'] . '" method="post">
-						<textarea name="reply-content" placeholder="Your reply..."></textarea>
-						<button type="submit" name="reply-submit">Submit reply</button>
-					</form>';
-		}
     }
 }
-
+include "footer.php";
 ?>

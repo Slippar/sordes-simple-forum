@@ -1,13 +1,17 @@
 html, * {
     padding: 0;
     margin: 0;
-	box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
 }
 body {
 	background-color: white;
     text-align: center;
 	font-family: "Arial"; 
 	font-size: 16px;
+    height: 100%;
 }
 .nav {
 	display: block;
@@ -44,59 +48,45 @@ body {
 	margin-bottom: auto;
 	margin-top: auto;
 	
-	background-color: grey;
 	border-right-style: solid;
 	border-left-style: solid;
 }
-.CatTopPost {
-	display: block;
-	background-color: white;
-	border-bottom-style: solid;
-	border-bottom-color: black;
-	border-collapse: collapse;
+.Cats, .catnames {
+    display: block;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-collapse: collapse;
 }
-.Cats {
-	display: block;
-	background-color: white;
-	border-bottom-style: solid;
-	border-bottom-color: black;
-	border-collapse: collapse;
+.topicviewtop {
+    border-top-style: solid;
+    border-top-color: black;
 }
-.ass {
-	display: block;
-	position: relative;
-	width: 50%;
-	margin-right: auto;
-	margin-left: auto;
-	border-right-style: solid;
-	border-right-color: black;
-	border-left-style: solid;
-	border-left-color: black;
-	border-top-style: solid;
-	border-top-color: black;
-	border-bottom-style: solid;
-	border-bottom-color: black;
+.categorylocation th, .catname {
+    width: 5%;
 }
-.ass1 {
-	display: block;
-	position: relative;
-	width: 50%;
-	margin-right: auto;
-	margin-left: auto;
-	border-right-style: solid;
-	border-right-color: black;
-	border-left-style: solid;
-	border-left-color: black;
-	border-bottom-style: solid;
-	border-bottom-color: black;
+.categorylocation, .topicviewtop, .topicview, .topictable1, .topictable2 {
+    border-collapse: collapse;
+    display: block;
+    position: relative;
+    width: 45%;
+    margin-right: auto;
+    margin-left: auto;
+    border-right-style: solid;
+    border-right-color: black;
+    border-left-style: solid;
+    border-left-color: black;
+    border-bottom-style: solid;
+    border-bottom-color: black;
 }
-.topictable1 {
-	width:100%
+.categorylocation {
+    border-bottom-style: none;
+    border-bottom-color: none;
 }
-.topictable2 {
-	width:100%
+#footer {
+    font-size: 10px;
+    clear: both;
+    position: relative;
 }
-
 
 
 

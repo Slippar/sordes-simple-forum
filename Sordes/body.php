@@ -1,9 +1,9 @@
 	<div class=forumbody>
-		<table class=Catnames>
+		<table class=catnames>
 		  <tr>
-			<td class=CatName>Category</td>
+			<th class=catname>Categories</th>
 		  </tr>
-		</table class=Catnames>
+		</table class=catnames>
 		<div class=catview>
 			<?php 
 					require "includes/dbh.inc.php";
@@ -26,3 +26,4 @@
 			?>
 		</div class=catview>
 	</div class=forumbody>
+</body>

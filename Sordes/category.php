@@ -23,7 +23,7 @@ else {
     else {
         //display category data
         while($row = mysqli_fetch_assoc($result)) {
-            echo '<h2>Topics in ′' . $row['nameCategories'] . '′ category</h2>';
+            echo '<table class="categorylocation"> <th>Topics in ' . $row['nameCategories'] . ' category </th></tableclass="categorylocation"> ';
         }
      
         //do a query for the topics
@@ -61,7 +61,7 @@ else {
                     echo '<table class="topicview">
 						  <tr>';
                         echo '<td class="leftpart">';
-                            echo '<h3><a href="topic.php?id=' . $row['idTopics'] . '">' . $row['subjectTopics'] . '</a><h3>';
+                            echo '<a href="topic.php?id=' . $row['idTopics'] . '">' . $row['subjectTopics'] . '</a>';
                         echo '</td>';
                         echo '<td class="rightpart">';
                             echo date('d-m-Y', strtotime($row['dateTopics']));
