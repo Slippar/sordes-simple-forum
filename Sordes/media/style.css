@@ -60,6 +60,7 @@ body {
 .topicviewtop {
     border-top-style: solid;
     border-top-color: black;
+	width: 100%;
 }
 .categorylocation th, .catname {
     width: 5%;
@@ -82,8 +83,24 @@ body {
     border-bottom-style: none;
     border-bottom-color: none;
 }
+.righttopictime {
+	padding-left: 700%;
+}
+.rightpart {
+	padding-left: 375%;
+}
+.replyyy {
+	padding-left: 500%;
+}
+.postleftpart {
+	padding: 1%;
+}
+.topictable2{
+	overflow: auto;
+}
 #footer {
-    font-size: 10px;
+	padding-top:10px;
+    font-size: 12px;
     clear: both;
     position: relative;
 }

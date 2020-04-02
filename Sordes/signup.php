@@ -13,6 +13,22 @@
 					<input type="password" name="pwd-repeat" placeholder="Repeat Password">
 					<button type="submit" name="signup-submit">Submit</button>
 				</form>
+				<?php
+					if (isset($_GET['signup'])) {
+						if ($_GET['signup'] = "success") {
+							echo 'You have succesfully registered';
+						}
+						else {
+							echo '';
+						}
+					}
+					if (isset($_GET['error'])) {
+						echo 'Problem with credentials, signup unsuccesful';
+					}
+					else {
+						echo '';
+					}
+				?>
 			</section>
 		</div>
 	

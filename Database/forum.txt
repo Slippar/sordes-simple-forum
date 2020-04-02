@@ -35,7 +35,22 @@ CREATE TABLE `users` (
 
 
 INSERT INTO `users` (`idUsers`, `uidUsers`, `pwdUsers`, `emailUsers`, `roleUsers`, `regdateUsers`) VALUES
-(0, 'Slippar', '$2y$10$zcwFG8aM/7Q3B8JiT/gHROCVNNWgBDGz2SsOpUtUbFJgGwZM7hZd2', 'georgewillbertt@gmail.com', '2', '2020-02-12 17:31:07');
+(0, 'Slippar', '$2y$10$zcwFG8aM/7Q3B8JiT/gHROCVNNWgBDGz2SsOpUtUbFJgGwZM7hZd2', 'georgewillbertt@gmail.com', '2', '2020-02-12 17:31:07'),
+(1, 'admin', '$2y$10$JjXEQ2rk5o7vFVVIwA7jMuD8NiN3QON1vN0jKbpuM26UGaEab.fBS', 'Admin@email.com', '2', '2020-03-02 11:36:49');
+
+INSERT INTO `categories` (`idCategories`, `nameCategories`, `descCategories`) VALUES
+(1, 'General', 'general discussion'),
+(2, 'Unmoderated', 'title');
+
+INSERT INTO `posts` (`idPost`, `contentPost`, `datePost`, `topicPost`, `byPost`) VALUES
+(1, 'Hello there', '2020-04-02 11:55:24', 1, 1),
+(2, 'general kenobi', '2020-04-02 11:55:36', 2, 1),
+(3, 'boi', '2020-04-02 11:56:07', 3, 1);
+
+INSERT INTO `topics` (`IdTopics`, `subjectTopics`, `dateTopics`, `catTopics`, `byTopics`) VALUES
+(1, 'Test subject 1', '2020-04-02 11:55:24', 1, 1),
+(2, 'Test subject 2', '2020-04-02 11:55:36', 1, 1),
+(3, 'YESA', '2020-04-02 11:56:07', 2, 1);
 
 
 

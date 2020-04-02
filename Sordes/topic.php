@@ -52,28 +52,34 @@ else {
         else {
                 echo '<table class="topictable1">
                       <tr>
-						<th>User</th>
-						<th>Reply</th>
+						<th class="userrr">User</th>
+						<th class="replyyy">Reply</th>
                       </tr>'; 
                      
                 while($row = mysqli_fetch_assoc($result)) { 				
                     echo '<table class="topictable2">
 						   <tr>';
                         echo '<td class="postleftpart">';
-                            echo $row['uidUsers'] . $row['datePost'];
+                            echo $row['uidUsers'] . " " . $row['datePost'];
                         echo '</td>';
                         echo '<td class="postrightpart">';
                             echo $row['contentPost'];
                         echo '</td>';
                     echo '</tr>';
                 }
-
+				
+				echo "</table class='topictable1'> </table class='topictable2'>";
+				
+				
 				if (isset($_SESSION['userId'])) {
-					echo '	<h3>Reply:</h3>
+					echo '	Reply:
 							<form class="SendReply" action="reply.php?id=' . $_GET['id'] . '" method="post">
 								<textarea name="reply-content" placeholder="Your reply..."></textarea>
 								<button type="submit" name="reply-submit">Submit reply</button>
 							</form>';
+				}
+				else {
+					echo 'Sign in to reply!';
 				}
             
         }

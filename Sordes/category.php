@@ -53,8 +53,8 @@ else {
                 //prepare the table
                 echo '<table class="topicviewtop">
                       <tr>
-                        <th>Topic</th>
-                        <th>Created at</th>
+                        <th class="lefttopic">Topic</th class="lefttopic">
+                        <th class="righttopictime">Created</th class="righttopictime">
                       </tr>'; 
                      
                 while($row = mysqli_fetch_assoc($result)) {               
@@ -68,9 +68,10 @@ else {
                         echo '</td>';
                     echo '</tr>';
                 }
+				echo "</table class='topicviewtop'> </table class='topicview'>";
             }
         }
     }
 }
- // include footer later when shits fixed thanks
+include "footer.php";
 ?>

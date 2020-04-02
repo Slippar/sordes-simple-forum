@@ -3,7 +3,7 @@
 include 'includes/dbh.inc.php';
 include 'header.php';
  
-echo '<h2>Create a topic</h2>';
+echo '<h2>Create a category</h2>';
 
 if (!isset($_SESSION['userId'])) {
     //the user is not signed in
@@ -43,4 +43,5 @@ else {
 		}
 	}
 }
+include "footer.php";
 ?>
