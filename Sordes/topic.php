@@ -1,5 +1,4 @@
 <?php
-//create_cat.php
 include 'includes/dbh.inc.php';
 include 'header.php';
  

@@ -1,5 +1,4 @@
 <?php
-//create_cat.php
 include 'includes/dbh.inc.php';
 
 session_start();
@@ -13,7 +12,6 @@ if (!isset($_SESSION['userId'])) {
     echo 'No bueno, youre not logged in';
 }
 else {  
-        //a real user posted a real reply
 		$sql = "INSERT INTO 
                     posts(contentPost,
                           datePost,
