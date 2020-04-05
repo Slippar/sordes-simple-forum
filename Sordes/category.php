@@ -21,12 +21,10 @@ else {
         echo 'This category does not exist.';
     }
     else {
-        //display category data
         while($row = mysqli_fetch_assoc($result)) {
             echo '<table class="categorylocation"> <th>Topics in ' . $row['nameCategories'] . ' category </th></tableclass="categorylocation"> ';
         }
      
-        //do a query for the topics
         $sql = "SELECT  
                     idTopics,
                     subjectTopics,
@@ -50,11 +48,10 @@ else {
             }
 			
             else{
-                //prepare the table
                 echo '<table class="topicviewtop">
                       <tr>
                         <th class="lefttopic">Topic</th class="lefttopic">
-                        <th class="righttopictime">Created</th class="righttopictime">
+                        <th class="righttopictime">Created at</th class="righttopictime">
                       </tr>'; 
                      
                 while($row = mysqli_fetch_assoc($result)) {               

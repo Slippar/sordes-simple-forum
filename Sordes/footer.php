@@ -1,3 +1,3 @@
 </body>
-<div id="footer">Pls no hack, made by George F</div>
+<div id="footer">Made by George F</div>
 </html>

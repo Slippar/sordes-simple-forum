@@ -25,8 +25,6 @@ else {
     }
 	
     else {
-     
-        //do a query for the posts
         $sql = "SELECT  
                     topicPost,
 					contentPost,

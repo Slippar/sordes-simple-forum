@@ -51,11 +51,16 @@ body {
 	border-right-style: solid;
 	border-left-style: solid;
 }
-.Cats, .catnames {
+.cats, .catnames {
     display: block;
     border-bottom-style: solid;
     border-bottom-color: black;
     border-collapse: collapse;
+}
+.catsname {
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-bottom: 1%;
 }
 .topicviewtop {
     border-top-style: solid;
@@ -66,9 +71,9 @@ body {
     width: 5%;
 }
 .categorylocation, .topicviewtop, .topicview, .topictable1, .topictable2 {
+	overflow: auto;
     border-collapse: collapse;
     display: block;
-    position: relative;
     width: 45%;
     margin-right: auto;
     margin-left: auto;
@@ -83,20 +88,38 @@ body {
     border-bottom-style: none;
     border-bottom-color: none;
 }
-.righttopictime {
-	padding-left: 700%;
+.righttopictime, .rightpart {
+	overflow: auto;
+	position: fixed; 
+	left: 50%;
+	right: 10%;
 }
-.rightpart {
-	padding-left: 375%;
+.userrr{
+	padding-left: 200%;
 }
 .replyyy {
-	padding-left: 500%;
+	position: fixed; 
+	right: 50%;
+	left: 51.5%;
 }
-.postleftpart {
-	padding: 1%;
+.postleftpart{
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-bottom: 1%;
+}
+.postrightpart{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 10%;
+	margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+	max-height: auto;
+	word-break: break-all;
 }
 .topictable2{
 	overflow: auto;
+	max-height: auto;
 }
 #footer {
 	padding-top:10px;

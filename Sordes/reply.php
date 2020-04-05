@@ -30,7 +30,8 @@ else {
             echo 'Your reply has not been saved, please try again later.';
         }
         else {
-            echo 'Your reply has been saved, check out <a href="topic.php?id=' . htmlentities($_GET['id']) . '">the topic</a>.';
+			header("Location: topic.php?id=" . htmlentities($_GET['id']));
+			exit();
         }
 
 }

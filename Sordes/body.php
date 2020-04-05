@@ -12,11 +12,11 @@
 					if ($result->num_rows > 0) {
 						// output data of each row
 						while($row = $result->fetch_assoc()) {
-							echo "<table class=Cats>
+							echo "<table class=cats>
 									<tr>
-										<td class=CatsName> <a href='category.php?id=" . $row["idCategories"] . "'>" . $row["nameCategories"]. "</a> </td class=CatsName>
+										<td class=catsname> <a href='category.php?id=" . $row["idCategories"] . "'>" . $row["nameCategories"]. "</a> </td>
 									</tr>
-								  </table class=Cats>";
+								  </table class=cats>";
 						}
 					} 
 					else {
