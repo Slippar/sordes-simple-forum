@@ -1,3 +1,6 @@
 # Sordes Forum
-Forum website
-Created 6.02.2020
+Simple forum written in php. General UI and CSS need a complete redo.
+
+administrator credentials:
+admin
+qwerty
