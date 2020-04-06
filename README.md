@@ -9,7 +9,7 @@ To install:
 
 Install xampp or equivalent
 
-Import the database
+Import the database into your SQL server
 
 Move sordes folder to xampp/htdocs folder
 
